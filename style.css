@@ -1,0 +1,76 @@
+#display{
+    display: flex;
+    flex-direction: row;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+#startPause{
+    width: 100px;
+    height: 60px;
+    font-weight: 700;
+    color: black;
+    border-color: rgb(0, 225, 255);
+    background: rgb(0, 225, 255);
+    box-shadow: 0 -3px rgb(14, 105, 117) inset;
+    transition: 0.2s;
+}
+
+#reset{
+    width: 100px;
+    font-weight: 700;
+    color: black;
+    border-color: rgb(0, 225, 255);
+    background: rgb(0, 225, 255);
+    box-shadow: 0 -3px rgb(14, 105, 117) inset;
+    transition: 0.2s;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    border: none;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.buttoncontainer{
+    padding-top: 100px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttoncontainer button{
+    outline: none;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 20%;
+}
+
+
+.progress-ring {
+    position: absolute;
+    z-index: -1;
+}
+
+.progress-ring__circle {
+    transition: 0.35s stroke-dashoffset;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}

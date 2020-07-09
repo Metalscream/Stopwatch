@@ -1,0 +1,40 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Stopwatch</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <svg
+                    class="progress-ring"
+                    width="400"
+                    height="600">
+                        <circle
+                        class="progress-ring__circle"
+                        stroke="grey"
+                        stroke-width="4"
+                        fill="transparent"
+                        r="150"
+                        cx="300"
+                        cy="300"/>
+                </svg>
+                <div id="display">
+                    <div id="hours">0:</div>
+                    <div id="minutes">0:</div>
+                    <div id="seconds">00.</div>
+                    <div id="miliseconds">00</div>
+                </div>
+                <div class="buttoncontainer">
+                    <button id="startPause">Start</button>
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+    </html>
